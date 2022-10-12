@@ -268,8 +268,11 @@ console.log(myArray);
 
 
 // Delete a user with the username ‘Elwyn.Skiles
-myArray.filter((w)=>{
-    return delete w.username=="Elwyn.Skiles"
+myArray.forEach((w, i)=>{
+  if(w.username=="Elwyn.Skiles"){
+     return myArray.splice(i,1)
+  }
+    
 })
 console.log(myArray);
 
