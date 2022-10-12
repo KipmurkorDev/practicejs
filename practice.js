@@ -243,7 +243,7 @@ const robName=myArray.filter((y)=>{
     return y.company.name=="Robel-Corkery"
 })
 
-// console.log(robName);
+console.log(robName);
 // // Sort users by username
 const sortedArray=myArray.sort((a,b)=>{
     return a.username.localeCompare(b.username)
@@ -266,9 +266,9 @@ console.log(myArray);
 
 
 // Delete a user with the username ‘Elwyn.Skiles
-const userdelete=myArray.filter((w)=>{
-    return w.username=="Elwyn.Skiles"
+myArray.filter((w)=>{
+    return delete w.username=="Elwyn.Skiles"
 })
-console.log(userdelete);
+console.log(myArray);
 
 
