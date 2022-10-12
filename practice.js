@@ -238,17 +238,19 @@ myArray.map((num)=>{
 console.log(myArray);
 
 // // Log the name of person who works at ‘Robel-Corkery” company
-
-const robName=myArray.filter((y)=>{
+const robName=myArray.find((y)=>{
     return y.company.name=="Robel-Corkery"
 })
 
-console.log(robName);
+console.log(robName.name);
+
+
 // // Sort users by username
 const sortedArray=myArray.sort((a,b)=>{
     return a.username.localeCompare(b.username)
 })
 console.log((sortedArray));
+
 // Log all the users whose lat is greater than 0
 const myLat=myArray.filter((z)=>{
     return z.address.geo.lat>0;
